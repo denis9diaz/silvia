@@ -48,16 +48,16 @@ body, html {
 
 /* Estilo del botón con degradado */
 .button-home {
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    color: whitesmoke;
-    background: linear-gradient(135deg, #f56767, #922121) !important; /* Degradado */
-    border: none;
-    border-radius: 50px; /* Botón redondeado */
-    cursor: pointer;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Efecto 3D */
-    transition: all 0.3s ease;
-    margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background: linear-gradient(135deg, #f56767, #922121) !important; /* Degradado */
+  border: none;
+  border-radius: 50px; /* Botón redondeado */
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Efecto 3D */
+  transition: all 0.3s ease;
+  margin-top: 50px;
 }
 
 .button-home:hover {
