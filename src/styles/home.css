@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/* Resetear márgenes y padding en todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Asegúrate de que el body y html ocupen toda la altura y no tengan márgenes */
+body, html {
+  height: 100%; /* Asegúrate de que el body y html ocupen toda la altura */
+  margin: 0; /* Elimina cualquier margen del body */
+}
+
 /* Contenedor general */
-.container {
+.container-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+  width: 100vw; /* Asegúrate de que el contenedor ocupe todo el ancho de la ventana */
   text-align: center;
   background: url('../img/fondo.png') no-repeat center center; /* Cambiar fondo por imagen */
   background-size: cover; /* Asegurarse de que la imagen cubra todo el contenedor */

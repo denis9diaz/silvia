@@ -6,7 +6,7 @@ const Home = () => {
   const [startGame, setStartGame] = React.useState(false);
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       {startGame ? (
         <Game />
       ) : (
