@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: url('../img/fondo.png') no-repeat center center; /* Cambiar fondo por imagen */
+  background-size: cover; /* Asegurarse de que la imagen cubra todo el contenedor */
+  font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+}
+
+/* Estilo del título */
+.titulo {
+  font-size: 3.5rem;
+  color: #F64044;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(155, 22, 22, 0.3);
+}
+
+/* Estilo de los textos */
+.texto {
+  font-size: 2rem;
+  color: rgb(65, 20, 20);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del botón con degradado */
+.button-home {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background: linear-gradient(135deg, #f56767, #922121) !important; /* Degradado de verde a amarillo */
+    border: none;
+    border-radius: 50px; /* Botón redondeado */
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Efecto 3D */
+    transition: all 0.3s ease;
+    margin-top: 50px;
+  }
+  
+  .button-home {
+    background: linear-gradient(135deg, #cc4545, #800707) !important; /* Degradado de verde a amarillo */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Aumentar el efecto 3D */
+    transform: translateY(-3px) !important; /* Efecto de elevación */
+    color: whitesmoke;
+  }
+  
+  .button-home:active {
+    transform: translateY(2px); /* Efecto de clic */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-home:focus {
+    outline: none;
+  }
+  
