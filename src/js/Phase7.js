@@ -99,7 +99,7 @@ const Phase7 = () => {
 
           {correctAnswers === clue.questions.length && (
             <div>
-              <h3 className='title-phase'>¿Qué prefieres? Regalo material o viaje</h3>
+              <h3 className='title-phase'>Regalo material o viaje</h3>
               <input
                 type="text"
                 className="input-phase"  // Clase para el input
