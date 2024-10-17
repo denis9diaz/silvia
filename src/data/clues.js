@@ -90,7 +90,7 @@ const clues = [
         answers: ["Batman Begins", "Malditos Bastardos", "El diario de Noa", "El libro de la selva"],
       },
       {
-        question: "¿Cual de estas pelis vimos juntos en el cine?",
+        question: "¿Cual de estas pelis NO vimos juntos en el cine?",
         correctAnswer: "La llamada",
         answers: ["Oppenheimer", "La llamada", "Barbie", "Jhon Wick 4"],
       },

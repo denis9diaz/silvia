@@ -1,0 +1,23 @@
+# Ignorar la carpeta de construcción
+build/
+
+# Ignorar archivos de configuración de npm
+*.log
+npm-debug.log*
+
+# Ignorar las carpetas de dependencias
+node_modules/
+
+# Ignorar configuraciones específicas de editores
+.vscode/
+.idea/
+
+# Ignorar archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar archivos de caché
+.cache/
