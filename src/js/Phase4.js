@@ -66,7 +66,7 @@ const Phase4 = ({ nextPhase }) => {
         className='img-phase'
       />
       <div className="question-container">
-        <h3 className="descripcion-fase">Más sobre nosotros:</h3>
+        <h3 className="descripcion-fase">Mini examen de cine:</h3>
         {correctAnswers < clue.questions.length && (
           <div>
             <p className="question-text">{clue.questions[correctAnswers].question}</p>

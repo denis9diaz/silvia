@@ -141,7 +141,7 @@ const clues = [
     ],
   },
   {
-    hint: "¿Qué prefieres? Regalo material o viaje",
+    hint: "Regalo material o viaje",
     imageSrc: beso,
     finalAnswer: "Viaje", // Respuesta final correcta
     questions: [
