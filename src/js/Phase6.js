@@ -14,34 +14,58 @@ const Phase6 = ({ nextPhase }) => {
       Swal.fire({
         icon: 'success',
         title: '¡Correcto!',
-        text: '¡Bien hecho! Has acertado la respuesta.',
+        position: 'bottom',
+        width: '300px',  // Ajustar ancho a 300px
+        padding: '1rem',
+        customClass: {
+          popup: 'compact-alert',
+        },
+        showConfirmButton: true, // Mostrar el botón de "OK"
       });
     } else {
       Swal.fire({
         icon: 'error',
         title: 'Incorrecto',
-        text: 'Intenta de nuevo.',
+        position: 'bottom',
+        width: '300px',
+        padding: '1rem',
+        customClass: {
+          popup: 'compact-alert',
+        },
+        showConfirmButton: true, // Mostrar el botón de "OK"
       });
     }
   };
-
+  
   const handleFinalAnswer = () => {
     if (finalAnswer.toLowerCase() === clue.finalAnswer.toLowerCase()) {
       Swal.fire({
         icon: 'success',
         title: '¡Correcto!',
-        text: '¡Has adivinado la imagen!',
+        position: 'bottom',
+        width: '300px',
+        padding: '1rem',
+        customClass: {
+          popup: 'compact-alert',
+        },
+        showConfirmButton: true, // Mostrar el botón de "OK"
       }).then(() => {
-        nextPhase(); // Si la respuesta final es correcta, avanza a la siguiente fase
+        nextPhase();
       });
     } else {
       Swal.fire({
         icon: 'error',
         title: 'Incorrecto',
-        text: 'La respuesta final no es correcta. Intenta de nuevo.',
+        position: 'bottom',
+        width: '300px',
+        padding: '1rem',
+        customClass: {
+          popup: 'compact-alert',
+        },
+        showConfirmButton: true, // Mostrar el botón de "OK"
       });
     }
-  };
+  };  
 
   const getImageStyle = () => {
     const blurAmount = (3 - correctAnswers) * 10; // Mayor difuminado si hay menos respuestas correctas

@@ -15,13 +15,20 @@ const Phase7 = () => {
     if (answer === clue.questions[correctAnswers].correctAnswer) {
       const newCorrectAnswers = correctAnswers + 1;
       setCorrectAnswers(newCorrectAnswers);
-
+  
       // Si el nuevo conteo de respuestas correctas es 2, muestra la imagen sin difuminar
       if (newCorrectAnswers === 2) {
         Swal.fire({
           icon: 'success',
           title: '¡Correcto!',
           text: '¡Bien hecho! Has acertado la respuesta. La imagen ya es visible.',
+          position: 'bottom',
+          width: '300px',
+          padding: '1rem',
+          customClass: {
+            popup: 'compact-alert',
+          },
+          showConfirmButton: true, // Mostrar el botón de "OK"
         }).then(() => {
           // Aclarar la imagen
           setIsImageVisible(true);
@@ -30,17 +37,29 @@ const Phase7 = () => {
         Swal.fire({
           icon: 'success',
           title: '¡Correcto!',
-          text: '¡Bien hecho! Has acertado la respuesta.',
+          position: 'bottom',
+          width: '300px',
+          padding: '1rem',
+          customClass: {
+            popup: 'compact-alert',
+          },
+          showConfirmButton: true, // Mostrar el botón de "OK"
         });
       }
     } else {
       Swal.fire({
         icon: 'error',
         title: 'Incorrecto',
-        text: 'Intenta de nuevo.',
+        position: 'bottom',
+        width: '300px',
+        padding: '1rem',
+        customClass: {
+          popup: 'compact-alert',
+        },
+        showConfirmButton: true, // Mostrar el botón de "OK"
       });
     }
-  };
+  };  
 
   const handleFinalAnswer = () => {
     if (finalAnswer.toLowerCase() === clue.finalAnswer.toLowerCase()) {

@@ -16,7 +16,7 @@ const clues = [
       {
         question: "¿Qué me robabas siempre en el gimnasio?",
         correctAnswer: "Las poleas",
-        answers: ["La multi", "Las poleas", "La de jalon", "El móvil"],
+        answers: ["La multi", "Las poleas", "La de jalón", "El móvil"],
       },
       {
         question: "Y fuera del gimnasio, ¿qué me robas siempre?",

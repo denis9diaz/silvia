@@ -146,3 +146,10 @@ body {
     height: auto; /* Mantiene la proporción del video */
   }
   
+  .compact-alert {
+    font-size: 14px;     /* Ajustar el tamaño de la fuente */
+    padding: 10px;       /* Reducir el padding interno */
+    line-height: 1.2;    /* Ajustar el espaciado entre líneas */
+    height: auto;        /* Dejar que la altura se ajuste automáticamente */
+  }
+  
