@@ -58,7 +58,7 @@ const clues = [
     finalAnswer: "cerdeña", // Respuesta final correcta
     questions: [
       {
-        question: "Llego sorniendo loco, que hay de nuevo. Pero llevo un par de muertos en el ...",
+        question: "Llego sonriendo loco, que hay de nuevo. Pero llevo un par de muertos en el ...",
         correctAnswer: "maletero",
         answers: ["trastero", "avispero", "maletero", "salpicadero"],
       },

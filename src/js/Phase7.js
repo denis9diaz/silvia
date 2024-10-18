@@ -21,7 +21,6 @@ const Phase7 = () => {
         Swal.fire({
           icon: 'success',
           title: '¡Correcto!',
-          text: '¡Bien hecho! Has acertado la respuesta. La imagen ya es visible.',
           position: 'bottom',
           width: '300px',
           padding: '1rem',
