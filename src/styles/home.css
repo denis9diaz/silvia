@@ -102,6 +102,7 @@ body, html {
 
 /* Estilos para pantallas muy pequeñas (teléfonos móviles) */
 @media (max-width: 480px) {
+  
   .titulo {
     font-size: 2rem; /* Reducir más el tamaño del título */
   }

@@ -1,155 +1,218 @@
 body {
-    margin: 0; /* Elimina el margen del cuerpo */
-    padding: 0; /* Elimina el padding del cuerpo */
-    overflow: hidden; /* Oculta las barras de desplazamiento */
-  }
-  
-  .phase-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
-    width: 100vw; /* Asegúrate de que el contenedor ocupe toda la anchura de la ventana */
-    background-image: url('../img/fondo.png'); /* Ajusta la ruta a tu imagen */
-    background-size: cover; /* Asegúrate de que la imagen cubra todo el espacio */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-  }
-  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento lateral */
+}
+
+.phase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ajusta el contenedor para que ocupe al menos la altura de la pantalla */
+  width: 100vw; /* Asegúrate de que el contenedor ocupe toda la anchura de la ventana */
+  background-image: url('../img/fondo.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio disponible */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 20px; /* Añade padding para evitar que el contenido quede pegado al borde */
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño del contenedor */
+}
+
 .adivina {
-    font-size: 2rem; /* Aumenta el tamaño del título */
-    color: #333; /* Color del texto */
-    margin-top: 20px; /* Margen superior */
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
 }
 
 .img-phase {
-    margin: 20px 0; /* Ajustar margen superior e inferior para la imagen */
-    max-width: 250px; /* Mantener el tamaño máximo */
-    border-radius: 15px; /* Bordes redondeados para la imagen */
+  margin: 20px 0;
+  max-width: 250px;
+  border-radius: 15px;
 }
 
 .descripcion-fase {
-    font-size: 1.5rem; /* Tamaño del texto de descripción */
-    margin-top: 20px;
-    color: #555; /* Color del texto de descripción */
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #555;
 }
 
 .round-button {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 1.2rem; /* Tamaño de fuente */
-    color: white; /* Color del texto */
-    background: linear-gradient(135deg, #F64044, #a71619) !important; /* Degradado de verde claro a verde más oscuro */
-    border: none; /* Sin borde */
-    border-radius: 50px; /* Botón completamente redondeado */
-    cursor: pointer; /* Cambiar cursor a puntero */
-    margin: 10px 5px; /* Espaciado entre botones */
-    transition: all 0.3s ease; /* Transición suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto 3D */
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(135deg, #F64044, #a71619) !important;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .round-button:hover {
-    background: linear-gradient(135deg, #be1f22, #720b0d) !important; /* Degradado más oscuro al pasar el mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa para el efecto 3D */
-    transform: translateY(-2px); /* Elevar el botón ligeramente al pasar el mouse */
+  background: linear-gradient(135deg, #be1f22, #720b0d) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
 }
 
 .title-phase {
-    font-size: 1.8rem; /* Aumentar el tamaño del título de la pregunta final */
-    margin-top: 20px; /* Espaciado superior */
-    color: #333; /* Color del texto */
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #333;
 }
 
 .input-phase {
-    padding: 10px; /* Espaciado interno del input */
-    font-size: 1.2rem; /* Tamaño de fuente del input */
-    border-radius: 8px; /* Bordes redondeados para el input */
-    border: 1px solid #ccc; /* Borde del input */
-    margin: 10px 0; /* Margen superior e inferior */
-    width: calc(100% - 22px); /* Ajustar el ancho para evitar desbordamiento */
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  width: calc(100% - 22px);
 }
 
 .submit-button {
-    padding: 10px 20px; /* Espaciado interno del botón enviar */
-    font-size: 1.2rem; /* Tamaño de fuente del botón enviar */
-    color: white; /* Color del texto */
-    background: #56ab2f; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    border-radius: 50px; /* Botón completamente redondeado */
-    cursor: pointer; /* Cambiar cursor a puntero */
-    transition: all 0.3s ease; /* Transición suave */
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: #56ab2f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .submit-button:hover {
-    background: #6bbf42; /* Color de fondo al pasar el mouse */
+  background: #6bbf42;
 }
 
 .question-text {
-    font-size: 1.2rem; /* Tamaño del texto de la pregunta */
-    margin: 20px 0; /* Margen superior e inferior para la pregunta */
-    color: #333; /* Color del texto de la pregunta */
-}
-
-.round-button {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 1.2rem; /* Tamaño de fuente */
-    color: white; /* Color del texto */
-    background: #ff6f61; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    border-radius: 50px; /* Botón completamente redondeado */
-    cursor: pointer; /* Cambiar cursor a puntero */
-    margin: 10px 5px; /* Espaciado entre botones */
-    transition: all 0.3s ease; /* Transición suave */
-}
-
-.round-button:hover {
-    background: #ff5b4a; /* Color de fondo al pasar el mouse */
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #333;
 }
 
 .final-message {
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff3e0; /* Color de fondo suave */
-    border: 2px solid #ffab00; /* Borde resaltante */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  padding: 20px;
+  background-color: #fff3e0;
+  border: 2px solid #ffab00;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.felicidades {
+  font-size: 2rem;
+  color: #f71313;
+  margin-bottom: 10px;
+}
+
+.fel2 {
+  font-size: 1.5rem;
+  color: #661996;
+}
+
+.show-gift-button {
+  background-color: #ff3c00;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-gift-button:hover {
+  background-color: #ff6600;
+}
+
+.video-container video {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+}
+
+.compact-alert {
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.2;
+  height: auto;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .phase-container {
+    height: auto; /* Permite que el contenido crezca verticalmente */
+    min-height: 100vh; /* Mantén al menos la altura de la pantalla */
+    overflow-y: auto; /* Permite el desplazamiento vertical en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding en pantallas pequeñas */
   }
-  
-  .felicidades {
-    font-size: 2rem; /* Tamaño de fuente grande */
-    color: #f71313; /* Color llamativo */
-    margin-bottom: 10px; /* Margen inferior */
+
+  .adivina {
+    font-size: 1.8rem; /* Reduce el tamaño de fuente */
   }
-  
-  .fel2 {
-    font-size: 1.5rem; /* Tamaño de fuente mediano */
-    color: #661996; /* Otro color llamativo */
+
+  .descripcion-fase {
+    font-size: 1.3rem;
   }
-  
-  .show-gift-button {
-    background-color: #ff3c00; /* Color de fondo del botón */
-    color: whitesmoke; /* Color de texto blanco */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    transition: background-color 0.3s; /* Transición suave */
+
+  .img-phase {
+    max-width: 200px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
   }
-  
-  .show-gift-button:hover {
-    background-color: #ff6600; /* Color al pasar el mouse */
+
+  .title-phase {
+    font-size: 1.5rem;
   }
-  
-  .video-container video {
-    width: 50%; /* Ajusta el ancho del video al 50% */
-    max-width: 600px; /* Máximo ancho para mantenerlo razonable en pantallas grandes */
-    height: auto; /* Mantiene la proporción del video */
+
+  .input-phase {
+    font-size: 1rem;
   }
-  
-  .compact-alert {
-    font-size: 14px;     /* Ajustar el tamaño de la fuente */
-    padding: 10px;       /* Reducir el padding interno */
-    line-height: 1.2;    /* Ajustar el espaciado entre líneas */
-    height: auto;        /* Dejar que la altura se ajuste automáticamente */
+
+  .round-button {
+    font-size: 1rem; /* Reduce el tamaño de los botones */
+    padding: 8px 15px;
   }
-  
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phase-container {
+    padding: 5px;
+    height: auto;
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura de la pantalla */
+  }
+
+  .adivina {
+    font-size: 1.6rem;
+  }
+
+  .descripcion-fase {
+    font-size: 1.2rem;
+  }
+
+  .img-phase {
+    max-width: 180px;
+  }
+
+  .title-phase {
+    font-size: 1.3rem;
+  }
+
+  .input-phase {
+    font-size: 0.9rem;
+  }
+
+  .round-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
