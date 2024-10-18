@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/silvia/static/css/main.2b839f8a.css",
+    "main.css": "/silvia/static/css/main.5f70578a.css",
     "main.js": "/silvia/static/js/main.9525d1b9.js",
     "static/media/fondo.png": "/silvia/static/media/fondo.5fd7371ec3651e94ab01.png",
     "static/media/sanse.png": "/silvia/static/media/sanse.0924971af864ececeddb.png",
@@ -11,11 +11,11 @@
     "static/media/cerdeña.png": "/silvia/static/media/cerdeña.a0b2d3be34da564256b6.png",
     "static/media/beso.png": "/silvia/static/media/beso.f1b0bf447c9c65a6753a.png",
     "index.html": "/silvia/index.html",
-    "main.2b839f8a.css.map": "/silvia/static/css/main.2b839f8a.css.map",
+    "main.5f70578a.css.map": "/silvia/static/css/main.5f70578a.css.map",
     "main.9525d1b9.js.map": "/silvia/static/js/main.9525d1b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b839f8a.css",
+    "static/css/main.5f70578a.css",
     "static/js/main.9525d1b9.js"
   ]
 }
